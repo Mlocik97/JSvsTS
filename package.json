@@ -1,0 +1,26 @@
+{
+	"name": "jsvsts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"run:js": "node ./src/example_javascript.js",
+		"run:ts": "node ./src/example_typescript.ts --experimental-strip-types",
+		"lint": "prettier --ignore-path .gitignore --check . && eslint",
+		"format": "prettier --ignore-path .gitignore --write .",
+		"check": "tsc -p ./tsconfig.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"@eslint/compat": "^1.4.1",
+		"eslint": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"globals": "^16.5.0",
+		"prettier": "^3.6.2",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+		"module": "ES2022",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"moduleResolution": "node",
+		"typeRoots": ["./node_modules/@types"],
+		"outDir": "./dist"
+	},
+	"include": ["./src/*"]
+}
