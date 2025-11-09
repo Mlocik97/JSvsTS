@@ -5,6 +5,14 @@ const object_typescript = {
 
 object_typescript;
 // ^?
+/*
+expected:
+
+{
+	readonly foo: "example";
+    readonly bar: "jsvsts";
+}
+*/
 
 object_typescript.zee; // this throws
 
@@ -14,8 +22,10 @@ function generic_ts<T extends string | number>(val: T): T extends string ? true 
 
 const result1_ts = generic_ts("hello");
 //    ^?
+// expected: true
 
 const result2_ts = generic_ts(7);
 //    ^?
+// expected: false
 
 console.log("TypeScript works same way as JavaScript");

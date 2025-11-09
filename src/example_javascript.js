@@ -5,6 +5,14 @@ const object_javascript = /** @type {const} */ ({
 
 object_javascript;
 // ^?
+/*
+expected:
+
+{
+	readonly foo: "example";
+    readonly bar: "jsvsts";
+}
+*/
 
 object_javascript.zee; // this throws
 
@@ -21,9 +29,11 @@ function generic_js(val) {
 
 const result1_js = generic_js('hello');
 //    ^?
+// expected: true
 
 const result2_js = generic_js(7);
 //    ^?
+// expected: false
 
 /*
  * Note there is also another syntax available to define generic function type:
